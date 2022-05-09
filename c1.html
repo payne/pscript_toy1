@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body>
+<h1>Canvas starts</h1>
+<canvas></canvas>
+<h1>Canvas stopped</h1>
+      <py-script>
+# https://github.com/pyscript/pyscript/blob/main/pyscriptjs/examples/numpy_canvas_fractals.html
+canvas = document.querySelector("canvas")
+console.log(canvas)
+ctx = canvas.getContext("2d")
+console.log("ctx: ")
+console.log(ctx);
+width = 400
+height = 400
+canvas.style.width="400px"
+canvas.style.height="400px"
+canvas.width = 400
+canvas.height = 400
+ctx.clearRect(0,0,width,height)
+console.log("Cleared canvas")
+ctx.fillRect(20, 20, 150, 100);
+console.log("fillRect called on canvas")
+      </py-script>
+  </body>
+</html>
